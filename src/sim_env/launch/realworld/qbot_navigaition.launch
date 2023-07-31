@@ -11,7 +11,7 @@
     <arg name="robot" default="turtlebot3_waffle" />
 
     <!-- Map file TODO -->
-    <arg name="map" default="warehouse" doc="map type [warehouse, workshop, turtlebot3_house, ...]" />
+    <arg name="map" default="my_room" doc="map type [warehouse, workshop, turtlebot3_house, ...]" />
 
     <!-- Load map -->
     <node name="map_server" pkg="map_server" type="map_server"

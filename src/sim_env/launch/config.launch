@@ -14,7 +14,7 @@
 
   <!-- Select the robots , the world and the map -->
   <arg name="world" default="warehouse" doc="model type [warehouse, workshop, turtlebot3_house, ...]"/>
-  <arg name="map" default="warehouse" doc="map type [warehouse, workshop, turtlebot3_house, ...]" />
+  <arg name="map" default="my_room" doc="map type [warehouse, workshop, turtlebot3_house, ...]" />
 
   <!-- Select the number of robots -->
   <arg name="robot_number" default="1" />
@@ -25,7 +25,7 @@
   <arg name="headless" default="false"/>
 
   <!-- Start Gazebo with a specific world -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch" unless="$(eval arg('world') == '')">
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" unless="$(eval arg('world') == '')">
     <arg name="world_name" value="$(find sim_env)/worlds/$(arg world).world"/>
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
